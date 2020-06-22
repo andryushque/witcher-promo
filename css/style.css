@@ -12,7 +12,16 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+
   background-color: #141218;
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-position: top right 20%;
+
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -61,6 +70,7 @@ body {
 }
 
 /*=== Main ===*/
+
 
 .main-content {
   display: flex;
@@ -162,6 +172,7 @@ body {
 .series {
   display: flex;
   align-items: center;
+  margin-bottom: 60px;
 }
 
 .card {
@@ -211,4 +222,31 @@ body {
   background-size: cover;
   background-position: center;
   background-color: transparent;
+}
+
+/*=== Footer ===*/
+
+.footer {
+  padding: 20px 0;
+  margin-top: auto;
+  background-color: #141218;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  line-height: 20px;
+  opacity: .4;
+}
+
+.footer-link {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
 }
