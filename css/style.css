@@ -1,0 +1,157 @@
+@font-face {
+  font-family: 'MasonChronicles';
+  src: url('../fonts/MasonChronicles.woff') format('woff'), url('../fonts/MasonChronicles.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #141218;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #fff;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/*=== Header ===*/
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+  margin-bottom: 90px;
+}
+
+.menu-list {
+  margin-left: 68px;
+  margin-right: auto;
+}
+
+.menu-link {
+  margin-right: 24px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-link:last-child {
+  margin-right: 0;
+}
+
+.menu-link:hover {
+  text-decoration: underline;
+}
+
+.social-link {
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+/*=== Main ===*/
+
+.main-content {
+  display: flex;
+  align-items: center;
+}
+
+.genre {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.rating-stars {
+  display: flex;
+}
+
+.rating-star {
+  margin-right: 4px;
+}
+
+.rating-star:last-child {
+  margin-right: 0;
+}
+
+.rating-number {
+  margin-left: 9px;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.main-title {
+  margin-bottom: 10px;
+  font-size: 76px;
+  line-height: 89px;
+  font-family: "MasonChronicles", serif;
+}
+
+.main-info {
+  max-width: 458px;
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.button {
+  padding: 22px 72px;
+  background: #9D2929;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+}
+
+.button-play {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  background: #9D2929;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.play-icon {
+  position: relative;
+  transform: translateX(5px);
+}
+
+.button-play::before {
+  position: absolute;
+  left: -16px;
+  top: -16px;
+
+  content: "";
+  width: 132px;
+  height: 132px;
+  background: #9D2929;
+  opacity: .5;
+  border-radius: 50%;
+}
