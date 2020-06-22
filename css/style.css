@@ -29,6 +29,7 @@ body {
 }
 
 .container {
+  width: 95%;
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -36,6 +37,7 @@ body {
 /*=== Header ===*/
 
 .header {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -67,6 +69,50 @@ body {
 .social-link {
   margin-left: 20px;
   text-decoration: none;
+}
+
+.social-link:first-child {
+  margin-left: 0;
+}
+
+.menu-btn {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  display: none;
+
+  width: 30px;
+  height: 2px;
+  background: #fff;
+
+  outline: none;
+  cursor: pointer;
+
+  transition: transform .2s;
+}
+
+.menu-btn::before {
+  position: absolute;
+  left: 0;
+  top: -8px;
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: #fff;
+  transition: transform .2s;
+}
+
+.menu-btn::after {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: #fff;
+  transition: transform .2s;
 }
 
 /*=== Main ===*/
@@ -289,6 +335,107 @@ body {
   color: #fff;
 }
 
+.footer-link:first-child {
+  margin-left: 0;
+}
+
 .footer-link:hover {
   text-decoration: underline;
+}
+
+/*=== Media ===*/
+
+@media (max-width: 768px) {
+  .button-play {
+    display: none;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-copyright {
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    width: 250px;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #9D2929;
+  }
+
+  .header-active {
+    display: flex;
+  }
+
+  .logo {
+    margin-bottom: 25px;
+  }
+
+  .social {
+    margin-bottom: 22px;
+    order: 2;
+  }
+
+  .menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+    order: 3;
+  }
+
+  .menu-link {
+    margin-right: 0;
+    margin-bottom: 17px;
+  }
+
+  .menu-link:last-child {
+    margin-bottom: 0;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .menu-btn-active {
+    height: 0;
+  }
+
+  .menu-btn-active::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+
+  .menu-btn-active::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+
+  .main-content {
+    margin-top: 196px;
+  }
+
+  .main-title {
+    font-size: 56px;
+  }
+
+  .swiper-container {
+    width: 75%;
+  }
+
+  .series {
+    width: 75%;
+  }
 }
