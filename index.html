@@ -11,6 +11,8 @@
     />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -22,7 +24,12 @@
 
           <nav class="menu-list">
             <a href="#" class="menu-link">Описание</a>
-            <a href="#" class="menu-link">Трейлер</a>
+            <a
+              data-fancybox
+              href="https://www.youtube.com/watch?v=mlO1YaqXLqw"
+              class="menu-link"
+              >Трейлер</a
+            >
             <a href="#" class="menu-link">Отзывы</a>
           </nav>
 
@@ -49,11 +56,11 @@
       <div class="container">
         <div class="main-content">
           <div class="content">
-            <span class="genre">
+            <span class="genre animate__animated animate__fadeInRight">
               2019, фэнтези
             </span>
 
-            <div class="rating">
+            <div class="rating animate__animated animate__fadeInRight">
               <div class="rating-stars">
                 <img class="rating-star" src="img/star.svg" alt="star" />
                 <img class="rating-star" src="img/star.svg" alt="star" />
@@ -71,10 +78,10 @@
               </div>
             </div>
             <!-- /.rating -->
-            <h1 class="main-title">
+            <h1 class="main-title animate__animated animate__fadeInRight">
               Ведьмак
             </h1>
-            <p class="main-info">
+            <p class="main-info animate__animated animate__fadeInRight">
               Ведьмак Геральт, мутант и убийца чудовищ, на своей верной лошади
               по кличке Плотва путешествует по Континенту. За тугой мешочек
               чеканных монет этот мужчина избавит вас от всякой настырной
@@ -82,14 +89,22 @@
               принцесс.
             </p>
 
-            <button class="button">
-              Смотреть онлайн
-            </button>
+            <a
+              data-fancybox
+              href="https://www.youtube.com/watch?v=mlO1YaqXLqw"
+              class="button animate__animated animate__fadeInRight"
+            >
+              Смотреть трейлер
+            </a>
           </div>
           <!-- /.content -->
-          <button class="button-play">
+          <a
+            data-fancybox
+            href="https://www.youtube.com/watch?v=mlO1YaqXLqw"
+            class="button-play"
+          >
             <img class="play-icon" src="img/play-button.png" alt="play" />
-          </button>
+          </a>
         </div>
         <!-- /.main-content -->
 
@@ -187,6 +202,8 @@
     </footer>
 
     <!-- JavaScript -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/main.js"></script>
   </body>

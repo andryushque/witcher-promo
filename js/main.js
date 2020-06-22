@@ -1,8 +1,10 @@
-var mySwiper = new Swiper('.swiper-container', {
+/*=== Slider ===*/
+
+var mySwiper = new Swiper(".swiper-container", {
   slidesPerView: 1,
   loop: true,
   navigation: {
-    nextEl: '.slide-next',
+    nextEl: ".slide-next",
   },
 
   // Responsive breakpoints
@@ -17,10 +19,12 @@ var mySwiper = new Swiper('.swiper-container', {
   },
 });
 
-var menuBtn = document.querySelector('.menu-btn');
-var menu = document.querySelector('.header');
+/*=== Menu button ===*/
 
-menuBtn.addEventListener('click', function () {
-  menu.classList.toggle('header-active');
-  menuBtn.classList.toggle('menu-btn-active');
+var menuBtn = document.querySelector(".menu-btn");
+var menu = document.querySelector(".header");
+
+menuBtn.addEventListener("click", function () {
+  menu.classList.toggle("header-active");
+  menuBtn.classList.toggle("menu-btn-active");
 });
