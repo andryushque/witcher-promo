@@ -170,8 +170,10 @@ body {
 /*=== Series ===*/
 
 .series {
+  position: relative;
   display: flex;
   align-items: center;
+  max-width: 420px;
   margin-bottom: 60px;
 }
 
@@ -192,12 +194,42 @@ body {
 
 .series-1 {
   background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%),
-    url(../img/series/ep1.png);
+    url(../img/series/s01e01.jpg);
 }
 
 .series-2 {
   background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%),
-    url(../img/series/ep2.png);
+    url(../img/series/s01e02.jpg);
+}
+
+.series-3 {
+  background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%),
+    url(../img/series/s01e03.jpg);
+}
+
+.series-4 {
+  background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%),
+    url(../img/series/s01e04.jpg);
+}
+
+.series-5 {
+  background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%),
+    url(../img/series/s01e05.jpg);
+}
+
+.series-6 {
+  background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%),
+    url(../img/series/s01e06.jpg);
+}
+
+.series-7 {
+  background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%),
+    url(../img/series/s01e07.jpg);
+}
+
+.series-8 {
+  background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%),
+    url(../img/series/s01e08.jpg);
 }
 
 .card-subtitle {
@@ -212,11 +244,21 @@ body {
   line-height: 16px;
 }
 
-.arrow {
+.swiper-container {
+  max-width: 420px;
+  margin-left: 0;
+}
+
+.slide-next {
+  position: absolute;
+  top: 45%;
+  right: -35px;
   width: 32px;
   height: 23px;
   border: none;
   outline: none;
+  cursor: pointer;
+
   background-image: url(../img/arrow.svg);
   background-repeat: no-repeat;
   background-size: cover;
